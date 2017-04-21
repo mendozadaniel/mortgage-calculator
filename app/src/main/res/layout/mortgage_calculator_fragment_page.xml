@@ -288,7 +288,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight=".09"
-            android:background="#0cd6b7"
+            android:background="#4f5d73"
             android:text="@string/calculate"
             android:textSize="@dimen/calculator_item_headings" />
 
