@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/all_payments_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/monthlyPaymentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/mortgage_monthly_payment"
+            android:textAlignment="center"
+            android:textSize="@dimen/all_payments_text_size"/>
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/all_payments_monthly_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/all_payments_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/loanAmountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/original_loan_amount"
+            android:textAlignment="center"
+            android:textSize="@dimen/all_payments_text_size" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/loanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/all_payments_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/totalCostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/total_cost_of_loan"
+            android:textAlignment="center"
+            android:textSize="@dimen/all_payments_text_size" />
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/totalCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/all_payments_text_size" />
+    </LinearLayout>
+
+    <include layout="@layout/custom_all_payments_row_heading"/>
+
+    <ListView
+        android:id="@+id/payments_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+
+
+

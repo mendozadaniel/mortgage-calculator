@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    android:fillViewport="true">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/monthly_calculator_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:theme="@style/AppTheme"
+        android:weightSum="1"
+        tools:context="com.papercup.danny.mortgagecalculator.MortgageCalculatorFragment">
+
+
+        <TextView
+            android:id="@+id/homeValueTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:labelFor="@+id/homeValue"
+            android:text="@string/home_value_title"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight=".09">
+
+            <TextView
+                android:id="@+id/homeValueCurrencySign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".44"
+                android:gravity="center"
+                android:text="@string/dollar_sign"
+                android:textSize="@dimen/additional_indicator" />
+
+            <EditText
+                android:id="@+id/homeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="@dimen/monthly_calculator_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".41" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/downPaymentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/downPayment"
+            android:text="@string/down_payment"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight=".09">
+
+            <TextView
+                android:id="@+id/downPaymentCurrencySign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".44"
+                android:gravity="center"
+                android:text="@string/dollar_sign"
+                android:textSize="@dimen/additional_indicator" />
+
+            <EditText
+                android:id="@+id/downPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="@dimen/monthly_calculator_text_size" />
+
+            <TextView
+                android:id="@+id/downPaymentPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".41"
+                android:gravity="center"
+                android:text="@string/zero_percent"
+                android:textSize="@dimen/additional_indicator" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/loanTermTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_term"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight=".09">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".44" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight=".15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".41" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/interestRateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/interestRate"
+            android:text="@string/interest_rate"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight=".09">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".44" />
+
+            <EditText
+                android:id="@+id/interestRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="@dimen/monthly_calculator_text_size" />
+
+            <TextView
+                android:id="@+id/interestRatePercentageSign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".41"
+                android:gravity="center"
+                android:text="@string/percentage_sign"
+                android:textSize="@dimen/additional_indicator" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/homeInsuranceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/homeInsurance"
+            android:text="@string/home_insurance"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight=".09">
+
+            <TextView
+                android:id="@+id/homeInsuranceCurrencySign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".44"
+                android:gravity="center"
+                android:text="@string/dollar_sign"
+                android:textSize="@dimen/additional_indicator" />
+
+            <EditText
+                android:id="@+id/homeInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="@dimen/monthly_calculator_text_size" />
+
+            <TextView
+                android:id="@+id/homeInsuranceAnnually"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".41"
+                android:gravity="center"
+                android:text="@string/per_year"
+                android:textSize="@dimen/additional_indicator" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/propertyTaxesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/propertyTaxes"
+            android:text="@string/property_taxes"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight=".09">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".44"
+                android:gravity="center"
+                android:text="@string/dollar_sign"
+                android:textSize="@dimen/additional_indicator" />
+
+            <EditText
+                android:id="@+id/propertyTaxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="@dimen/monthly_calculator_text_size" />
+
+
+            <TextView
+                android:id="@+id/propertyTaxesPercentage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".41"
+                android:gravity="center"
+                android:text="@string/zero_percent"
+                android:textSize="@dimen/additional_indicator" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".09"
+            android:background="#0cd6b7"
+            android:text="@string/calculate"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mortgage_monthly_payment"
+            android:layout_weight=".04"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/calculator_item_headings" />
+
+        <TextView
+            android:id="@+id/monthlyPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zero_dollars"
+            android:textSize="@dimen/monthly_payment_result"
+            android:layout_weight=".09"/>
+
+    </TableLayout>
+</ScrollView>

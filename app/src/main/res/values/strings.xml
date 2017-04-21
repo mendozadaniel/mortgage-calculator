@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="home_value_title">Loan Amount:</string>
+    <string name="down_payment">Down Payment:</string>
+    <string name="loan_term">Loan Term:</string>
+    <string name="_15_years">15 Years</string>
+    <string name="_20_years">20 Years</string>
+    <string name="_30_years">30 Years</string>
+    <string name="interest_rate">Interest Rate:</string>
+    <string name="home_insurance">Home Insurance:</string>
+    <string name="property_taxes">Property Taxes:</string>
+    <string name="calculate">Calculate</string>
+    <string name="dollar_sign">$</string>
+    <string name="percentage_sign">%</string>
+    <string name="zero_percent">0%</string>
+    <string name="per_year">/year</string>
+    <string name="mortgage_monthly_payment">Monthly Payment:</string>
+    <string name="zero_dollars">$0</string>
+    <string name="total_cost_of_mortgage">Total Cost of Mortgage:</string>
+    <string name="mortgage_calculator_page_title">Calculator</string>
+    <string name="all_payments_page_title">All Payments</string>
+    <string name="payment_number">Payment</string>
+    <string name="principal">Principal</string>
+    <string name="interest">Interest</string>
+    <string name="balance">Balance</string>
+    <string name="original_loan_amount">Original Loan Amount:</string>
+    <string name="total_cost_of_loan">Total Cost of Loan:</string>
+
+    <string-array name="loan_terms_list">
+        <item>15 years</item>
+        <item>20 years</item>
+        <item>30 years</item>
+    </string-array>
+</resources>
