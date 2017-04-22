@@ -290,7 +290,8 @@
             android:layout_weight=".09"
             android:background="#4f5d73"
             android:text="@string/calculate"
-            android:textSize="@dimen/calculator_item_headings" />
+            android:textSize="@dimen/calculator_item_headings"
+            android:textColor="#0dc9ad"/>
 
         <TextView
             android:layout_width="match_parent"
